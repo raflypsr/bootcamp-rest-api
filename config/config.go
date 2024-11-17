@@ -16,7 +16,6 @@ func ConnectDataBase() *gorm.DB {
 	port := os.Getenv("DB_PORT")
 	database := os.Getenv("DB_NAME")
 
-	// production
 	dsn := "host=" + host + " user=" + username + " password=" + password + " dbname=" + database + " port=" + port + " sslmode=disable"
 	dbGorm, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
