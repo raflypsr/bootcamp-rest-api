@@ -33,7 +33,7 @@ func main() {
 
 	//programmatically set swagger info
 	docs.SwaggerInfo.Title = "Review Book REST API"
-	docs.SwaggerInfo.Description = "This is REST API Review Book."
+	docs.SwaggerInfo.Description = "user just able to read review, get own profile, like, comment"
 	docs.SwaggerInfo.Version = "1.0"
 	docs.SwaggerInfo.Host = utils.Getenv("HOST", "localhost") + ":8080"
 	docs.SwaggerInfo.Schemes = []string{"http"}
